@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>UpDate</title>
+</head>
+<body>
+<form action="/update" method="post"  enctype="multipart/form-data">
+    <input placeholder="id" name="id" th:value="${up.getEmployeeCode()}" readonly><br>
+    <input placeholder="name" name="name" th:value="${up.getName()}"><br>
+    <input placeholder="age" name="age" th:value="${up.getAge()}"><br>
+    <input placeholder="salary" name="salary" th:value="${up.getSalary()}"><br>
+    <input placeholder="branch" name="branch" th:value="${up.getBranch()}"><br>
+    <button type="submit">Update</button>
+</form>
+</body>
+</html>
